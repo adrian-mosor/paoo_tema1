@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblib.a  CMakeFiles/lib.dir/src/basicPhone.cpp.o CMakeFiles/lib.dir/src/phone.cpp.o CMakeFiles/lib.dir/src/smartPhone.cpp.o
+/usr/bin/ranlib liblib.a

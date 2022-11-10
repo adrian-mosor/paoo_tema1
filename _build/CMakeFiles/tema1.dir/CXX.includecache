@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/ubuntu_s1/paoo/paoo_tema1/inc/basicPhone.hpp
+phone.hpp
+/workspaces/ubuntu_s1/paoo/paoo_tema1/inc/phone.hpp
+
+/workspaces/ubuntu_s1/paoo/paoo_tema1/inc/phone.hpp
+string
+-
+
+/workspaces/ubuntu_s1/paoo/paoo_tema1/inc/smartPhone.hpp
+phone.hpp
+/workspaces/ubuntu_s1/paoo/paoo_tema1/inc/phone.hpp
+
+/workspaces/ubuntu_s1/paoo/paoo_tema1/src/main.cpp
+iostream
+-
+../inc/basicPhone.hpp
+/workspaces/ubuntu_s1/paoo/paoo_tema1/inc/basicPhone.hpp
+../inc/smartPhone.hpp
+/workspaces/ubuntu_s1/paoo/paoo_tema1/inc/smartPhone.hpp
+

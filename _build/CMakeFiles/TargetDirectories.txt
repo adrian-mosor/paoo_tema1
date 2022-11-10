@@ -1,0 +1,4 @@
+/workspaces/ubuntu_s1/paoo/paoo_tema1/_build/CMakeFiles/rebuild_cache.dir
+/workspaces/ubuntu_s1/paoo/paoo_tema1/_build/CMakeFiles/edit_cache.dir
+/workspaces/ubuntu_s1/paoo/paoo_tema1/_build/CMakeFiles/lib.dir
+/workspaces/ubuntu_s1/paoo/paoo_tema1/_build/CMakeFiles/tema1.dir
