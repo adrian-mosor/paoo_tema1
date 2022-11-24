@@ -18,3 +18,11 @@ void BasicPhone::set_keyboard_type(const std::string& keyboardType){
 void BasicPhone::set_radio_available(const bool hasRadio){
     has_radio = hasRadio;
 }
+
+void BasicPhone::display_info(){
+
+    std::cout << "Serial number: " << serial_number << '\n';
+    std::cout << "Relase date: " << release_date << '\n';
+    std::cout << "Ram size: " << keyboard_type << '\n';
+    std::cout << "Operating system: " << has_radio << '\n';
+}

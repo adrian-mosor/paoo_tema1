@@ -33,6 +33,13 @@ SmartPhone::SmartPhone(const SmartPhone& p){    //copy constructor
 
 SmartPhone& SmartPhone::operator=(const SmartPhone& p){   //assignment operator overloading
 
+    if(this == &p){
+        std::cout << "ENTERED IF SAME OBJECTS\n\n";
+        return *this;   //item 11 - handling assigment 
+    }
+
+    //delete bp;  //if this and p points to the same object, p.bp also gets deleted!
+    
     serial_number = p.serial_number;
     release_date = p.release_date;
     ram_size = p.ram_size;
@@ -41,4 +48,12 @@ SmartPhone& SmartPhone::operator=(const SmartPhone& p){   //assignment operator 
     std::cout << "assignment operator executed\n";
 
     return *this;   //return the existing object
+}
+
+void SmartPhone::display_info(){
+
+    std::cout << "Serial number: " << serial_number << '\n';
+    std::cout << "Relase date: " << release_date << '\n';
+    std::cout << "Ram size: " << ram_size << '\n';
+    std::cout << "Operating system: " << operating_system << '\n';
 }

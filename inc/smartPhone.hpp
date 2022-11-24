@@ -1,11 +1,16 @@
 #pragma once
 #include "phone.hpp"
 
+class Bitmap{
+
+};
+
 class SmartPhone : public Phone{
 
 private:
     int ram_size{};
     std::string operating_system{};
+    Bitmap *bp;
 
 public:
     SmartPhone() = default;
@@ -15,7 +20,8 @@ public:
     SmartPhone& operator=(const SmartPhone&);  //assignment operator 
     void set_ram_size(const int);
     void set_operating_system(const std::string&);
-
+    void display_info();
+    
     int get_ram_size() const{
         return ram_size;
     }

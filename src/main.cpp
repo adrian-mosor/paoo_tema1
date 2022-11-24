@@ -12,50 +12,92 @@ void print_line(){
 
 int main(){
 
-    print_line(); 
+    //first assignment:
+
+    // print_line(); 
+    // {
+    //     SmartPhone s1(909, "2020/08/22", 4096, "android");
+    // }
+    
+    // print_line();
+    // {
+    //     BasicPhone b1(919, "2012/09/21", "qwerty", true);
+    // }
+    
+    // print_line();
+    // {
+    //     Phone *p1 = new SmartPhone(991, "2022/03/28", 8012, "ios");
+    //     delete p1;
+    // }
+    
+    // print_line();
+    // {
+    //     Phone *p1 = new SmartPhone(); //default constructor included 
+    //     delete p1;   
+    // }
+    
+    // print_line();
+    // {
+    //     // Phone *p1 = new BasicPhone(); //illegal (deleted auto-generated constructor)
+    //     Phone *p1 = new BasicPhone(901, "2018/02/12", "basic", false);
+    //     delete p1;
+    // }
+
+    // print_line();
+    // {
+    //     SmartPhone s1(909, "2020/08/22", 4096, "android");
+    //     SmartPhone s2(s1);  //copy constructor (SmartPhone s2 = s1)
+
+    //     SmartPhone s3;
+    //     s3 = s1;    //assignment operator
+    // }
+    
+    // print_line();
+    // {   
+    //     BasicPhone b1(901, "2018/02/12", "basic", false);
+        
+    //     // BasicPhone b2(b1);   //illegal (copy constructor and assigment operator deleted)
+    //     // BasicPhone b3 = b1;
+    // }
+
+    //2nd assignment:
+    print_line();
+    
     {
         SmartPhone s1(909, "2020/08/22", 4096, "android");
-    }
-    
-    print_line();
-    {
-        BasicPhone b1(919, "2012/09/21", "qwerty", true);
-    }
-    
-    print_line();
-    {
-        Phone *p1 = new SmartPhone(991, "2022/03/28", 8012, "ios");
-        delete p1;
-    }
-    
-    print_line();
-    {
-        Phone *p1 = new SmartPhone(); //default constructor included 
-        delete p1;   
-    }
-    
-    print_line();
-    {
-        // Phone *p1 = new BasicPhone(); //illegal (deleted auto-generated constructor)
-        Phone *p1 = new BasicPhone(901, "2018/02/12", "basic", false);
-        delete p1;
+        SmartPhone s2, s3;
+        s2 = s3 = s1;    //assignment operator - chain of assignments
+
+        //copied all parts
+        std::cout << "\nDisplay info for s1:\n";
+        s1.display_info();
+
+        std::cout << "\nDisplay info for s2:\n";
+        s2.display_info();
+
+        std::cout << "\nDisplay info for s3:\n";
+        s3.display_info();
     }
 
     print_line();
     {
         SmartPhone s1(909, "2020/08/22", 4096, "android");
-        SmartPhone s2(s1);  //copy constructor (SmartPhone s2 = s1)
+        s1 = s1;
 
-        SmartPhone s3;
-        s3 = s1;    //assignment operator
+        std::cout << "\nDisplay info for s1:\n";
+        s1.display_info();
     }
-    
+
     print_line();
     {   
-        BasicPhone b1(901, "2018/02/12", "basic", false);
-        
-        // BasicPhone b2(b1);   //illegal (copy constructor and assigment operator deleted)
-        // BasicPhone b3 = b1;
+        SmartPhone s1(909, "2020/08/22", 4096, "android");
+        SmartPhone s2{s1};  //copy constructor
+
+        std::cout << "\nDisplay info for s1:\n";
+        s1.display_info();
+
+        std::cout << "\nDisplay info for s2:\n";
+        s2.display_info();       
     }
 
     

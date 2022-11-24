@@ -15,7 +15,8 @@ public:
     BasicPhone& operator=(const BasicPhone&) = delete;  //assignment operator
     void set_keyboard_type(const std::string&);
     void set_radio_available(const bool);
-
+    void display_info();
+    
     std::string get_keyboard_type() const{
         return keyboard_type;
     }    

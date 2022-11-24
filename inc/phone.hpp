@@ -13,7 +13,8 @@ public:
     virtual ~Phone();
     void set_serial_number(const int);
     void set_release_date(const std::string&);
-
+    virtual void display_info() = 0;
+    
     int get_serial_number() const{
         return serial_number;
     }
