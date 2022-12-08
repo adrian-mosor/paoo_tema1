@@ -57,3 +57,15 @@ void SmartPhone::display_info(){
     std::cout << "Ram size: " << ram_size << '\n';
     std::cout << "Operating system: " << operating_system << '\n';
 }
+
+void SmartPhone::modify_resource(){
+
+    std::lock_guard<std::mutex> lock(g_mutex);
+    shared_resource++;
+} // auto unlocking the access on this shared resource, 
+    // when object 'lock' is destroyed on the end of the scope
+
+int SmartPhone::get_resource(){
+
+    return shared_resource;
+}
